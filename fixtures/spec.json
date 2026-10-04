@@ -1,0 +1,90 @@
+{
+ "assess_window": 3600,
+ "certificate_ttl": 0,
+ "chains": [
+  {
+   "id": "ethereum",
+   "rpc_url": "https://ethereum-rpc.publicnode.com/"
+  }
+ ],
+ "clauses": [
+  {
+   "id": "k1",
+   "kind": "JUDGED",
+   "level": "MANDATORY",
+   "text": "The documentation states the royalty rate and who can change it."
+  },
+  {
+   "check": {
+    "field": "contract",
+    "type": "CODE_AT",
+    "value": "ethereum"
+   },
+   "id": "k2",
+   "kind": "CHECK",
+   "level": "MANDATORY",
+   "text": "The collection contract is deployed."
+  },
+  {
+   "check": {
+    "field": "metadata",
+    "type": "VALID_JSON",
+    "value": "object"
+   },
+   "id": "k3",
+   "kind": "CHECK",
+   "level": "MANDATORY",
+   "text": "The metadata sample is a JSON object."
+  },
+  {
+   "check": {
+    "field": "docs",
+    "type": "CONTAINS_FIELD",
+    "value": "contract"
+   },
+   "id": "k4",
+   "kind": "CHECK",
+   "level": "MANDATORY",
+   "text": "The documentation names the contract."
+  },
+  {
+   "id": "k5",
+   "kind": "JUDGED",
+   "level": "OPTIONAL",
+   "text": "The documentation describes how holders can verify the artwork's provenance."
+  }
+ ],
+ "contest_window": 900,
+ "evidence_domains": [
+  "cdn.jsdelivr.net",
+  "raw.githubusercontent.com"
+ ],
+ "fields": [
+  {
+   "id": "docs",
+   "label": "Documentation",
+   "required": true,
+   "type": "DOCUMENT"
+  },
+  {
+   "id": "metadata",
+   "label": "Sample token metadata",
+   "required": true,
+   "type": "DOCUMENT"
+  },
+  {
+   "id": "contract",
+   "label": "Collection contract",
+   "required": true,
+   "type": "ADDRESS"
+  },
+  {
+   "id": "project",
+   "label": "Project name",
+   "required": false,
+   "type": "TEXT"
+  }
+ ],
+ "summary": "What a collection must publish before it is listed. TEST / DEMONSTRATION ONLY - NOT A REAL COLLECTION. Synthetic data: the studio, the collection and these documents exist only in this repository.",
+ "title": "Open collection standard (test only)"
+}

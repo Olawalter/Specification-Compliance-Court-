@@ -1,0 +1,15 @@
+{
+ "attributes": [
+  {
+   "trait_type": "Tail",
+   "value": "Ribbon"
+  },
+  {
+   "trait_type": "Frame",
+   "value": "Bamboo"
+  }
+ ],
+ "description": "TEST / DEMONSTRATION ONLY - NOT A REAL COLLECTION. Synthetic data: the studio, the collection and these documents exist only in this repository.",
+ "image": "ipfs://example/lumen-kite-1.png",
+ "name": "Lumen Kite #1"
+}

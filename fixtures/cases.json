@@ -1,0 +1,398 @@
+{
+ "cases": [
+  {
+   "addresses": "both",
+   "case": "SC01",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-complete.html",
+     "sha256": "332bd3432eec8a6d89e8ab32e35a8907dc67b35de081ccb614ff8b1d420f53d3"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "MET"
+   },
+   "expect_verdict": "COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "every clause met, the optional one too",
+   "path": "assess",
+   "subject": "Lumen Kites (test only)",
+   "submitter": "s01",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Lumen Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC02",
+   "contest": "issuer",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-standard.html",
+     "sha256": "df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "every mandatory clause met and the optional one not: compliant all the same, and the issuer's contest upholds it",
+   "path": "assess",
+   "subject": "Lumen Kites Second Series (test only)",
+   "submitter": "s02",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Lumen Kites Second Series"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC03",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-vague.html",
+     "sha256": "1787e251b12e813961a8e16e4de19170b694a8fe1de3c9246ef3e6804f6a971c"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_states": {
+    "k1": "NOT_MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "PARTIALLY_COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "royalties are mentioned and never stated: no rate, nobody named",
+   "path": "assess",
+   "subject": "Vague Kites (test only)",
+   "submitter": "s03",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Vague Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC04",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-placeholder.html",
+     "sha256": "b75e534ab21dd26c1112261ac316268905d1ee761d7ed31b86df6168051a7ed6"
+    },
+    "metadata": {
+     "document": "evidence/metadata-broken.json",
+     "sha256": "00c8de030bef489ea5516e783e774e147a47e735a2b9bc5e16c256b1e80a1f41"
+    }
+   },
+   "expect_states": {
+    "k1": "NOT_MET",
+    "k2": "NOT_MET",
+    "k3": "NOT_MET",
+    "k4": "NOT_MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "NON_COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "a placeholder page, broken metadata and an address with no contract: no mandatory clause is met",
+   "path": "assess",
+   "subject": "Placeholder Kites (test only)",
+   "submitter": "s04",
+   "values": {
+    "contract": "0x000000000000000000000000000000000000dead",
+    "project": "Placeholder Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC05",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-planted.html",
+     "sha256": "60d64a255141072d154e76b56d9dc3a2e02bb8ef8187f742b8ea8481950173bb"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_reason": "SOURCE_ADDRESSES_ADJUDICATOR",
+   "expect_states": {
+    "k1": "NOT_MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "PARTIALLY_COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "the documentation addresses the adjudicator: the judged clauses are not met without the panel, and the checks are still decided in code",
+   "path": "assess",
+   "subject": "Planted Kites (test only)",
+   "submitter": "s05",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Planted Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC06",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-standard.html",
+     "sha256": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_round": "EVIDENCE_UNREADABLE",
+   "expect_verdict": "UNVERIFIABLE",
+   "final_by": "EVIDENCE_UNREADABLE_THROUGH_THE_WINDOW",
+   "note": "the pinned digest is not the served document's: the round decides nothing, and when the assessment window passes the submission is unverifiable",
+   "path": "unreadable",
+   "subject": "Unpinned Kites (test only)",
+   "submitter": "s06",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Unpinned Kites"
+   }
+  },
+  {
+   "addresses": "dead",
+   "case": "SC07",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-standard.html",
+     "sha256": "df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_round": "EVIDENCE_UNREADABLE",
+   "expect_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "submitted at addresses that serve nothing: a round decides nothing, the submitter adds addresses for the same pinned bytes, and the next round reads them",
+   "path": "mirror_added",
+   "subject": "Restored Kites (test only)",
+   "submitter": "s07",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Restored Kites"
+   }
+  },
+  {
+   "addresses": "dead_then_live",
+   "case": "SC08",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-standard.html",
+     "sha256": "df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_served_by": "raw",
+   "expect_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "the first address of each document serves nothing and the second serves the pinned bytes: the evidence is read from the mirror",
+   "path": "assess",
+   "subject": "Mirrored Kites (test only)",
+   "submitter": "s08",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Mirrored Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC09",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-standard.html",
+     "sha256": "df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "NOT_MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "PARTIALLY_COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "good documentation - of another contract: the clause that binds the evidence to the submitted address is checked in code and is not met",
+   "path": "assess",
+   "subject": "Borrowed Kites (test only)",
+   "submitter": "s09",
+   "values": {
+    "contract": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "project": "Borrowed Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC10",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-undeployed.html",
+     "sha256": "45aa607e0aa9b91814e2e5563b405ca5aa7e4e0aaf018d3e907b3ae784169cc6"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_states": {
+    "k1": "MET",
+    "k2": "NOT_MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "PARTIALLY_COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "good documentation of a contract that was never deployed: the chain says there is no code at the address",
+   "path": "assess",
+   "subject": "Undeployed Kites (test only)",
+   "submitter": "s10",
+   "values": {
+    "contract": "0x000000000000000000000000000000000000dead",
+    "project": "Undeployed Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC11",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-standard.html",
+     "sha256": "df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_verdict": "PENDING",
+   "final_by": "WITHDRAWN_BY_SUBMITTER",
+   "note": "withdrawn by its submitter before any round was asked for",
+   "path": "withdraw",
+   "subject": "Withdrawn Kites (test only)",
+   "submitter": "s11",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Withdrawn Kites"
+   }
+  },
+  {
+   "addresses": "both",
+   "case": "SC12",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-as-picture.png",
+     "sha256": "1d90d5af13edbda2de0d2014dc33d75512275b3c88d1268f1620f5d7437b3bd5"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_reason": "ASSESSED",
+   "expect_states": {
+    "k1": "NOT_MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "NOT_MET",
+    "k5": "NOT_MET"
+   },
+   "expect_verdict": "PARTIALLY_COMPLIANT",
+   "final_by": "ASSESSED",
+   "note": "a picture where documentation was asked for: it is the pinned evidence and it has no text, so no clause that reads it is met - decided at once",
+   "path": "assess",
+   "subject": "Pictured Kites (test only)",
+   "submitter": "s12",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Pictured Kites"
+   }
+  },
+  {
+   "addresses": "dead",
+   "case": "SC13",
+   "documents": {
+    "docs": {
+     "document": "evidence/docs-standard.html",
+     "sha256": "df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d"
+    },
+    "metadata": {
+     "document": "evidence/metadata.json",
+     "sha256": "21c1a5f5ee333cb0793e07bb40c98d0db332a4648b9e757570f86dccb40996a4"
+    }
+   },
+   "expect_round": "EVIDENCE_UNREADABLE",
+   "expect_verdict": "UNVERIFIABLE",
+   "final_by": "GIVEN_UP_BY_SUBMITTER",
+   "note": "submitted at addresses that serve nothing: a round decides nothing, nobody else may close the submission early, and its submitter gives it up without waiting out the window",
+   "path": "given_up",
+   "subject": "Abandoned Kites (test only)",
+   "submitter": "s13",
+   "values": {
+    "contract": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "project": "Abandoned Kites"
+   }
+  }
+ ],
+ "origins": [
+  "cdn.jsdelivr.net",
+  "raw.githubusercontent.com"
+ ],
+ "unpublished": "evidence/never-published.html"
+}
