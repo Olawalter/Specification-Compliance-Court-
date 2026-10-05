@@ -1,0 +1,100 @@
+21:49:26 contract 0xf5a38f83b6579DB83C81b41828f56C24Cf78Be32 phase publish
+21:49:26 phase publish
+21:49:26   publish_spec: publish_spec as issuer
+21:50:06     FINALIZED/SUCCESS votes idle,idle,agree,agree,agree
+21:50:12     publish_spec HELD {"spec_id": "SPEC-000001", "spec_hash": "5d3a475b8cb7ecefa502cbc8684ff65f5ef8c634449bb1b86e1bf1374c60368b"}
+21:50:12 summary {"steps": 1, "transactions": 1, "outcomes_checked": 1, "outcomes_held": 1, "missed": [], "refusals": 0, "refusals_held": 0}
+21:50:57 contract 0xf5a38f83b6579DB83C81b41828f56C24Cf78Be32 phase submit
+21:50:57 phase submit
+21:50:57   submit:SC01: submit as s01
+21:51:36     FINALIZED/SUCCESS votes idle,agree,agree,agree,idle
+21:51:44     submit:SC01 HELD {"subject": "Lumen Kites (test only)"}
+21:51:44   submit:SC02: submit as s02
+21:52:27     FINALIZED/SUCCESS votes idle,agree,agree,agree,idle
+21:52:36     submit:SC02 HELD {"subject": "Lumen Kites Second Series (test only)"}
+21:52:36   submit:SC03: submit as s03
+21:53:19     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+21:53:26     submit:SC03 HELD {"subject": "Vague Kites (test only)"}
+21:53:26   submit:SC04: submit as s04
+21:54:05     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+21:54:12     submit:SC04 HELD {"subject": "Placeholder Kites (test only)"}
+21:54:12   submit:SC05: submit as s05
+21:54:52     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+21:54:59     submit:SC05 HELD {"subject": "Planted Kites (test only)"}
+21:55:00   submit:SC06: submit as s06
+21:55:44     FINALIZED/SUCCESS votes idle,idle,agree,agree,agree
+21:55:51     submit:SC06 HELD {"subject": "Unpinned Kites (test only)"}
+21:55:51   submit:SC07: submit as s07
+21:56:31     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+21:56:37     submit:SC07 HELD {"subject": "Restored Kites (test only)"}
+21:56:37   submit:SC08: submit as s08
+21:57:16     FINALIZED/SUCCESS votes agree,agree,idle,agree,agree
+21:57:23     submit:SC08 HELD {"subject": "Mirrored Kites (test only)"}
+21:57:23   submit:SC09: submit as s09
+21:58:03     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+21:58:10     submit:SC09 HELD {"subject": "Borrowed Kites (test only)"}
+21:58:10   submit:SC10: submit as s10
+21:58:56     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+21:59:04     submit:SC10 HELD {"subject": "Undeployed Kites (test only)"}
+21:59:04   submit:SC11: submit as s11
+21:59:43     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+21:59:50     submit:SC11 HELD {"subject": "Withdrawn Kites (test only)"}
+21:59:50   submit:SC12: submit as s12
+22:00:29     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+22:00:36     submit:SC12 HELD {"subject": "Pictured Kites (test only)"}
+22:00:36   submit:SC13: submit as s13
+22:01:15     FINALIZED/SUCCESS votes agree,agree,idle,agree,idle
+22:01:22     submit:SC13 HELD {"subject": "Abandoned Kites (test only)"}
+22:01:22 summary {"steps": 14, "transactions": 14, "outcomes_checked": 14, "outcomes_held": 14, "missed": [], "refusals": 0, "refusals_held": 0}
+22:02:00 contract 0xf5a38f83b6579DB83C81b41828f56C24Cf78Be32 phase assess
+22:02:00 phase assess
+22:02:00   assess:SC01: assess as keeper
+22:02:54     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:02:57     assess:SC01 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "MET"}, "expected_verdict": "COMPLIANT"}
+22:02:57   assess:SC02: assess as keeper
+22:03:49     FINALIZED/SUCCESS votes agree,idle,agree,agree,idle
+22:03:52     assess:SC02 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:03:52   contest:SC02: contest as issuer
+22:04:42     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+22:04:46     contest:SC02 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:04:46   assess:SC03: assess as keeper
+22:05:32     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:05:35     assess:SC03 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:05:35   assess:SC04: assess as keeper
+22:06:22     FINALIZED/SUCCESS votes idle,agree,agree,idle,agree
+22:06:31     assess:SC04 HELD {"expected_states": {"k1": "NOT_MET", "k2": "NOT_MET", "k3": "NOT_MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "NON_COMPLIANT"}
+22:06:31   assess:SC05: assess as keeper
+22:07:17     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+22:07:21     assess:SC05 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:07:21   assess:SC06: assess as keeper
+22:08:13     FINALIZED/SUCCESS votes idle,idle,agree,agree,agree
+22:08:18     assess:SC06 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+22:08:18   assess-unread:SC07: assess as keeper
+22:09:00     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:09:06     assess-unread:SC07 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+22:09:06   add_mirror:SC07:docs: add_mirror as s07
+22:09:50     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+22:09:50   add_mirror:SC07:metadata: add_mirror as s07
+22:10:29     FINALIZED/SUCCESS votes idle,agree,agree,agree,agree
+22:10:29   assess:SC07: assess as s07
+22:11:25     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+22:11:28     assess:SC07 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:11:28   assess:SC08: assess as keeper
+22:12:39     FINALIZED/SUCCESS votes agree,agree,agree,idle
+22:12:42     assess:SC08 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:12:42   assess:SC09: assess as keeper
+22:13:33     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:13:37     assess:SC09 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:13:37   assess:SC10: assess as keeper
+22:14:32     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+22:14:36     assess:SC10 HELD {"expected_states": {"k1": "MET", "k2": "NOT_MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:14:36   withdraw:SC11: withdraw_submission as s11
+22:15:15     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:15:17     withdraw:SC11 HELD {"status": "WITHDRAWN"}
+22:15:17   assess:SC12: assess as keeper
+22:16:07     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+22:16:11     assess:SC12 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:16:11   assess:SC13: assess as keeper
+22:16:56     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+22:17:01     assess:SC13 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+22:17:01 summary {"steps": 31, "transactions": 31, "outcomes_checked": 29, "outcomes_held": 29, "missed": [], "refusals": 0, "refusals_held": 0}

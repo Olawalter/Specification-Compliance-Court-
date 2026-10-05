@@ -1,0 +1,230 @@
+04:02:36 contract 0xaFCed3F4bcbC85791cd0a0890bfbFa6Fd419f622 phase full
+04:02:36 phase publish
+04:02:36   publish_spec: publish_spec as issuer
+04:03:13     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:03:18     publish_spec HELD {"spec_id": "SPEC-000001", "spec_hash": "5d3a475b8cb7ecefa502cbc8684ff65f5ef8c634449bb1b86e1bf1374c60368b"}
+04:03:18 phase submit
+04:03:18   submit:SC01: submit as s01
+04:04:01     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+04:04:08     submit:SC01 HELD {"subject": "Lumen Kites (test only)"}
+04:04:08   submit:SC02: submit as s02
+04:04:45     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+04:04:53     submit:SC02 HELD {"subject": "Lumen Kites Second Series (test only)"}
+04:04:53   submit:SC03: submit as s03
+04:05:42     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:05:55     submit:SC03 HELD {"subject": "Vague Kites (test only)"}
+04:05:55   submit:SC04: submit as s04
+04:06:35     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:06:42     submit:SC04 HELD {"subject": "Placeholder Kites (test only)"}
+04:06:42   submit:SC05: submit as s05
+04:07:27     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:07:33     submit:SC05 HELD {"subject": "Planted Kites (test only)"}
+04:07:33   submit:SC06: submit as s06
+04:08:15     FINALIZED/SUCCESS votes agree,agree,idle,agree,idle
+04:08:38     submit:SC06 HELD {"subject": "Unpinned Kites (test only)"}
+04:08:38   submit:SC07: submit as s07
+04:09:21     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+04:09:27     submit:SC07 HELD {"subject": "Restored Kites (test only)"}
+04:09:27   submit:SC08: submit as s08
+04:10:10     FINALIZED/SUCCESS votes agree,idle,agree,agree,idle
+04:10:17     submit:SC08 HELD {"subject": "Mirrored Kites (test only)"}
+04:10:17   submit:SC09: submit as s09
+04:10:55     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+04:11:07     submit:SC09 HELD {"subject": "Borrowed Kites (test only)"}
+04:11:07   submit:SC10: submit as s10
+04:11:56     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:12:02     submit:SC10 HELD {"subject": "Undeployed Kites (test only)"}
+04:12:02   submit:SC11: submit as s11
+04:12:46     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:13:03     submit:SC11 HELD {"subject": "Withdrawn Kites (test only)"}
+04:13:03   submit:SC12: submit as s12
+04:13:41     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:13:48     submit:SC12 HELD {"subject": "Pictured Kites (test only)"}
+04:13:48   submit:SC13: submit as s13
+04:14:26     FINALIZED/SUCCESS votes agree,agree,agree,idle,agree
+04:14:33     submit:SC13 HELD {"subject": "Abandoned Kites (test only)"}
+04:14:33 phase assess
+04:14:33   assess:SC01: assess as keeper
+04:16:13     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+04:16:16     assess:SC01 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "MET"}, "expected_verdict": "COMPLIANT"}
+04:16:16   assess:SC02: assess as keeper
+04:17:08     FINALIZED/SUCCESS votes idle,agree,idle,agree,agree
+04:17:11     assess:SC02 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+04:17:11   contest:SC02: contest as issuer
+04:17:55     FINALIZED/SUCCESS votes idle,agree,agree,idle,agree
+04:17:58     contest:SC02 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+04:17:58   assess:SC03: assess as keeper
+04:18:47     FINALIZED/SUCCESS votes agree,idle,agree,agree,idle
+04:18:50     assess:SC03 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+04:18:50   assess:SC04: assess as keeper
+04:19:39     FINALIZED/SUCCESS votes idle,agree,idle,agree,agree
+04:19:49     assess:SC04 HELD {"expected_states": {"k1": "NOT_MET", "k2": "NOT_MET", "k3": "NOT_MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "NON_COMPLIANT"}
+04:19:49   assess:SC05: assess as keeper
+04:20:39     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+04:20:43     assess:SC05 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+04:20:43   assess:SC06: assess as keeper
+04:21:22     FINALIZED/SUCCESS votes idle,agree,agree,idle,agree
+04:21:33     assess:SC06 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+04:21:33   assess-unread:SC07: assess as keeper
+04:22:16     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+04:22:21     assess-unread:SC07 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+04:22:21   add_mirror:SC07:docs: add_mirror as s07
+04:22:59     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+04:22:59   add_mirror:SC07:metadata: add_mirror as s07
+04:23:37     FINALIZED/SUCCESS votes idle,agree,agree,agree,agree
+04:23:37   assess:SC07: assess as s07
+04:24:31     FINALIZED/SUCCESS votes agree,agree,idle,agree,idle
+04:24:35     assess:SC07 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+04:24:35   assess:SC08: assess as keeper
+04:25:45     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+04:25:48     assess:SC08 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+04:25:48   assess:SC09: assess as keeper
+04:26:50     FINALIZED/SUCCESS votes idle,agree,idle,agree,agree
+04:26:53     assess:SC09 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+04:26:53   assess:SC10: assess as keeper
+04:27:47     FINALIZED/SUCCESS votes idle,agree,idle,agree,agree
+04:27:50     assess:SC10 HELD {"expected_states": {"k1": "MET", "k2": "NOT_MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+04:27:50   withdraw:SC11: withdraw_submission as s11
+04:28:44     FINALIZED/SUCCESS votes idle,agree,agree,agree,idle
+04:28:45     withdraw:SC11 HELD {"status": "WITHDRAWN"}
+04:28:45   assess:SC12: assess as keeper
+04:31:20     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+04:31:23     assess:SC12 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+04:31:23   assess:SC13: assess as keeper
+04:32:06     FINALIZED/SUCCESS votes idle,idle,agree,agree,agree
+04:32:11     assess:SC13 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+04:32:11 phase finalize
+04:32:12   finalize:SC01: finalize as keeper
+04:33:01     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:33:04     finalize:SC01 HELD {"verdict": "COMPLIANT", "final_by": "ASSESSED", "compliant": true, "tally": {"mandatory": 4, "mandatory_met": 4, "optional": 1, "optional_met": 1}}
+04:33:05   finalize:SC02: finalize as keeper
+04:33:43     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:33:46     finalize:SC02 HELD {"verdict": "COMPLIANT", "final_by": "ASSESSED", "compliant": true, "tally": {"mandatory": 4, "mandatory_met": 4, "optional": 1, "optional_met": 0}}
+04:33:47   finalize:SC03: finalize as keeper
+04:34:25     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:34:28     finalize:SC03 HELD {"verdict": "PARTIALLY_COMPLIANT", "final_by": "ASSESSED", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 3, "optional": 1, "optional_met": 0}}
+04:34:29   finalize:SC04: finalize as keeper
+04:35:07     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:35:11     finalize:SC04 HELD {"verdict": "NON_COMPLIANT", "final_by": "ASSESSED", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 0, "optional": 1, "optional_met": 0}}
+04:35:12   finalize:SC05: finalize as keeper
+04:35:55     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+04:35:58     finalize:SC05 HELD {"verdict": "PARTIALLY_COMPLIANT", "final_by": "ASSESSED", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 3, "optional": 1, "optional_met": 0}}
+04:36:00   waiting 2693s for the assessment window of SUB-000006
+04:38:00   waiting 2573s for the assessment window of SUB-000006
+04:40:00   waiting 2453s for the assessment window of SUB-000006
+04:42:00   waiting 2333s for the assessment window of SUB-000006
+04:44:00   waiting 2213s for the assessment window of SUB-000006
+04:46:00   waiting 2093s for the assessment window of SUB-000006
+04:48:00   waiting 1973s for the assessment window of SUB-000006
+04:50:01   waiting 1852s for the assessment window of SUB-000006
+04:52:01   waiting 1732s for the assessment window of SUB-000006
+04:54:01   waiting 1612s for the assessment window of SUB-000006
+04:56:01   waiting 1492s for the assessment window of SUB-000006
+04:58:01   waiting 1372s for the assessment window of SUB-000006
+05:00:01   waiting 1252s for the assessment window of SUB-000006
+05:02:01   waiting 1132s for the assessment window of SUB-000006
+05:04:01   waiting 1012s for the assessment window of SUB-000006
+05:06:01   waiting 892s for the assessment window of SUB-000006
+05:08:01   waiting 772s for the assessment window of SUB-000006
+05:10:01   waiting 652s for the assessment window of SUB-000006
+05:12:01   waiting 532s for the assessment window of SUB-000006
+05:14:01   waiting 412s for the assessment window of SUB-000006
+05:16:01   waiting 292s for the assessment window of SUB-000006
+05:18:01   waiting 172s for the assessment window of SUB-000006
+05:20:02   waiting 51s for the assessment window of SUB-000006
+05:20:54   lapse:SC06: lapse as keeper
+05:21:34     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+05:21:37     lapse:SC06 HELD {"verdict": "UNVERIFIABLE", "final_by": "EVIDENCE_UNREADABLE_THROUGH_THE_WINDOW", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 0, "optional": 1, "optional_met": 0}}
+05:21:38   finalize:SC07: finalize as keeper
+05:22:18     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+05:22:21     finalize:SC07 HELD {"verdict": "COMPLIANT", "final_by": "ASSESSED", "compliant": true, "tally": {"mandatory": 4, "mandatory_met": 4, "optional": 1, "optional_met": 0}}
+05:22:23   finalize:SC08: finalize as keeper
+05:23:01     FINALIZED/SUCCESS votes idle,agree,idle,agree,agree
+05:23:04     finalize:SC08 HELD {"verdict": "COMPLIANT", "final_by": "ASSESSED", "compliant": true, "tally": {"mandatory": 4, "mandatory_met": 4, "optional": 1, "optional_met": 0}}
+05:23:06   finalize:SC09: finalize as keeper
+05:23:49     FINALIZED/SUCCESS votes agree,agree,agree,idle,agree
+05:23:52     finalize:SC09 HELD {"verdict": "PARTIALLY_COMPLIANT", "final_by": "ASSESSED", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 3, "optional": 1, "optional_met": 0}}
+05:23:54   finalize:SC10: finalize as keeper
+05:24:38     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+05:24:41     finalize:SC10 HELD {"verdict": "PARTIALLY_COMPLIANT", "final_by": "ASSESSED", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 3, "optional": 1, "optional_met": 0}}
+05:24:43   finalize:SC12: finalize as keeper
+05:25:30     FINALIZED/SUCCESS votes agree,agree,agree,idle,agree
+05:25:33     finalize:SC12 HELD {"verdict": "PARTIALLY_COMPLIANT", "final_by": "ASSESSED", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 2, "optional": 1, "optional_met": 0}}
+05:25:35   refuse:lapse_early_by_another: expecting a refusal of lapse
+05:26:12     refused
+05:26:12   lapse:SC13: lapse as s13
+05:26:50     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+05:26:54     lapse:SC13 HELD {"verdict": "UNVERIFIABLE", "final_by": "GIVEN_UP_BY_SUBMITTER", "compliant": false, "tally": {"mandatory": 4, "mandatory_met": 0, "optional": 1, "optional_met": 0}}
+05:26:54 phase versions
+05:26:54   refuse:revise_by_stranger: expecting a refusal of revise_spec
+05:27:31     refused
+05:27:31   revise_spec: revise_spec as issuer
+05:28:09     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+05:28:14     revise_spec HELD {"latest_version": 2, "v1": true, "v2_found": false}
+05:28:14   submit:V2: submit as s01
+05:28:58     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+05:29:03   assess:V2: assess as keeper
+05:29:47     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+05:29:50     assess:V2 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "MET"}, "expected_verdict": "COMPLIANT"}
+05:29:52   waiting 861s for the contest window of SUB-000014
+05:31:52   waiting 741s for the contest window of SUB-000014
+05:33:52   waiting 621s for the contest window of SUB-000014
+05:35:52   waiting 501s for the contest window of SUB-000014
+05:37:52   waiting 381s for the contest window of SUB-000014
+05:39:52   waiting 261s for the contest window of SUB-000014
+05:41:52   waiting 141s for the contest window of SUB-000014
+05:43:52   waiting 21s for the contest window of SUB-000014
+05:44:14   finalize:V2: finalize as keeper
+05:44:59     FINALIZED/SUCCESS votes agree,agree,agree,agree,idle
+05:45:03     finalize:V2 HELD {"valid_until": "2026-11-04T04:29:09Z", "expired_later": true}
+05:45:03   refuse:retire_by_stranger: expecting a refusal of retire_version
+05:45:46     refused
+05:45:46   retire_version: retire_version as issuer
+05:46:30     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+05:46:31     retire_version HELD {"compliant": true, "spec_retired": true}
+05:46:31   refuse:submit_to_retired: expecting a refusal of submit
+05:47:10     refused
+05:47:10 phase refusals
+05:47:10   refuse:publish_conflicting_checks: expecting a refusal of publish_spec
+05:47:48     refused
+05:47:48   refuse:publish_window_too_short: expecting a refusal of publish_spec
+05:48:28     refused
+05:48:28   refuse:issuer_submits: expecting a refusal of submit
+05:49:12     refused
+05:49:12   refuse:missing_required_field: expecting a refusal of submit
+05:49:50     refused
+05:49:50   refuse:unpinned_document: expecting a refusal of submit
+05:50:28     refused
+05:50:28   refuse:document_outside_hosts: expecting a refusal of submit
+05:51:07     refused
+05:51:07   refuse:subject_addresses_adjudicator: expecting a refusal of submit
+05:51:46     refused
+05:51:46   refuse:unknown_version: expecting a refusal of submit
+05:52:25     refused
+05:52:25   refuse:assess_final: expecting a refusal of assess
+05:53:05     refused
+05:53:05   refuse:contest_final: expecting a refusal of contest
+05:53:43     refused
+05:53:43   refuse:withdraw_final: expecting a refusal of withdraw_submission
+05:54:23     refused
+05:54:23   refuse:mirror_after_final: expecting a refusal of add_mirror
+05:55:12     refused
+05:55:12   refuse:unknown_submission: expecting a refusal of finalize
+05:55:50     refused
+05:55:50   submit:REFUSALS: submit as stranger
+05:56:34     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+05:56:44   refuse:mirror_by_another: expecting a refusal of add_mirror
+05:57:28     refused
+05:57:28   refuse:withdraw_by_another: expecting a refusal of withdraw_submission
+05:58:07     refused
+05:58:07   refuse:lapse_too_early: expecting a refusal of lapse
+05:58:44     refused
+05:58:44   assess:REFUSALS: assess as keeper
+05:59:29     FINALIZED/SUCCESS votes idle,agree,agree,agree,idle
+05:59:29   refuse:contest_by_stranger: expecting a refusal of contest
+06:00:10     refused
+06:00:10   refuse:finalize_too_early: expecting a refusal of finalize
+06:01:05     refused
+06:01:05 phase registry
+06:01:10     registry HELD {"specifications": 1, "submissions": 15, "resolutions": 16}
+06:01:10 summary {"steps": 73, "transactions": 72, "outcomes_checked": 46, "outcomes_held": 46, "missed": [], "refusals": 22, "refusals_held": 22}

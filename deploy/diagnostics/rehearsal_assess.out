@@ -1,0 +1,54 @@
+22:02:00 contract 0xf5a38f83b6579DB83C81b41828f56C24Cf78Be32 phase assess
+22:02:00 phase assess
+22:02:00   assess:SC01: assess as keeper
+22:02:54     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:02:57     assess:SC01 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "MET"}, "expected_verdict": "COMPLIANT"}
+22:02:57   assess:SC02: assess as keeper
+22:03:49     FINALIZED/SUCCESS votes agree,idle,agree,agree,idle
+22:03:52     assess:SC02 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:03:52   contest:SC02: contest as issuer
+22:04:42     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+22:04:46     contest:SC02 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:04:46   assess:SC03: assess as keeper
+22:05:32     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:05:35     assess:SC03 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:05:35   assess:SC04: assess as keeper
+22:06:22     FINALIZED/SUCCESS votes idle,agree,agree,idle,agree
+22:06:31     assess:SC04 HELD {"expected_states": {"k1": "NOT_MET", "k2": "NOT_MET", "k3": "NOT_MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "NON_COMPLIANT"}
+22:06:31   assess:SC05: assess as keeper
+22:07:17     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+22:07:21     assess:SC05 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:07:21   assess:SC06: assess as keeper
+    rpc transient on eth_getTransactionByHash (1/8): Request to https://studio.genlayer.com/api failed: HTTPSConnectionPool(host='studio.genlay; retry in 5s
+22:08:13     FINALIZED/SUCCESS votes idle,idle,agree,agree,agree
+22:08:18     assess:SC06 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+22:08:18   assess-unread:SC07: assess as keeper
+22:09:00     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:09:06     assess-unread:SC07 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+22:09:06   add_mirror:SC07:docs: add_mirror as s07
+22:09:50     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+22:09:50   add_mirror:SC07:metadata: add_mirror as s07
+22:10:29     FINALIZED/SUCCESS votes idle,agree,agree,agree,agree
+22:10:29   assess:SC07: assess as s07
+22:11:25     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+22:11:28     assess:SC07 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:11:28   assess:SC08: assess as keeper
+22:12:39     FINALIZED/SUCCESS votes agree,agree,agree,idle
+22:12:42     assess:SC08 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "COMPLIANT"}
+22:12:42   assess:SC09: assess as keeper
+22:13:33     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:13:37     assess:SC09 HELD {"expected_states": {"k1": "MET", "k2": "MET", "k3": "MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:13:37   assess:SC10: assess as keeper
+    rpc transient on sim_getConsensusContract (1/8): Request to https://studio.genlayer.com/api failed: HTTPSConnectionPool(host='studio.genlay; retry in 5s
+22:14:32     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+22:14:36     assess:SC10 HELD {"expected_states": {"k1": "MET", "k2": "NOT_MET", "k3": "MET", "k4": "MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:14:36   withdraw:SC11: withdraw_submission as s11
+22:15:15     FINALIZED/SUCCESS votes agree,idle,idle,agree,agree
+22:15:17     withdraw:SC11 HELD {"status": "WITHDRAWN"}
+22:15:17   assess:SC12: assess as keeper
+22:16:07     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+22:16:11     assess:SC12 HELD {"expected_states": {"k1": "NOT_MET", "k2": "MET", "k3": "MET", "k4": "NOT_MET", "k5": "NOT_MET"}, "expected_verdict": "PARTIALLY_COMPLIANT"}
+22:16:11   assess:SC13: assess as keeper
+22:16:56     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+22:17:01     assess:SC13 HELD {"expected": "recorded, not applied, the submission stays open", "status_after": "SUBMITTED", "open_round": "EVIDENCE_UNREADABLE"}
+22:17:01 summary {"steps": 31, "transactions": 31, "outcomes_checked": 29, "outcomes_held": 29, "missed": [], "refusals": 0, "refusals_held": 0}

@@ -1,0 +1,258 @@
+242 mutations, 0 anchor problems
+carried over from earlier passes on the same contract: 234 killed
+accept-control: unmodified copy must pass ...
+control green; 8 mutations over 4 job(s)
+
+  [1/8] killed  : final: a verdict that rests on no reading has no reading time
+  [2/8] killed  : final: a final submission frees an open slot
+  [3/8] killed  : contest: a submission's rounds are capped
+  [4/8] killed  : contest: the submitter's retry of the issuer's contest is not the issuer's to pay
+  [5/8] killed  : round: no marker is stored from a round that decides nothing
+  [6/8] killed  : chain: a null error is no error
+  [7/8] killed  : gate: a title that cannot be encoded is refused
+  [8/8] killed  : gate: a lookup is the one the clause calls for
+
+killed:   actions: retries of an open contest are counted
+killed:   actions: the issuer's retry is shown
+killed:   add_mirror: addresses are capped
+killed:   add_mirror: not an address already named
+killed:   add_mirror: only before it is final
+killed:   add_mirror: only the submitter
+killed:   assess: a reading clears the open round
+killed:   assess: a round that decides nothing is on the record
+killed:   assess: a round that decides nothing restarts the window
+killed:   assess: after a silent chain or an unusable answer the retries are the parties'
+killed:   assess: after unreadable evidence the retries are the submitter's
+killed:   assess: only a submitted submission
+killed:   assess: only inside its window
+killed:   assess: rounds are capped
+killed:   assess: the last round starts no window
+killed:   certificate: expired after its lifetime
+killed:   certificate: nothing about a time before it existed
+killed:   certificate: only a final COMPLIANT one is compliant
+killed:   chain: a lookup only for a supplied address
+killed:   chain: a non-200 answer is no answer
+killed:   chain: a wallet that delegates is not a contract
+killed:   chain: an endpoint is asked once
+killed:   chain: an endpoint's error is not an answer
+killed:   chain: an over-long answer is no answer
+killed:   chain: hexadecimal comes in pairs
+killed:   chain: no chain is asked when the documents are gone
+killed:   chain: no code is no contract
+killed:   chain: silence under a mandatory clause decides nothing
+killed:   chain: silence under an optional clause holds nothing up
+killed:   chain: the answer is to this request
+killed:   check: CODE_AT is what the chain answered
+killed:   check: NaN is not JSON
+killed:   check: a JSON array is an array
+killed:   check: a JSON object is an object
+killed:   check: a byte-order mark is not part of a JSON document
+killed:   check: a class holds one Latin letter
+killed:   check: a document's words are taken once
+killed:   check: a field left out meets no check
+killed:   check: a file that does not parse is not JSON
+killed:   check: a file with no text meets no check on text
+killed:   check: a letter and its other case are one letter
+killed:   check: a name any document has binds nothing
+killed:   check: a pair read by its capital has its reading
+killed:   check: a pair read by its small letter has its reading
+killed:   check: a passage is found by its words
+killed:   check: a value left out is not named
+killed:   check: a word spelled with both letters of a pair has its reading
+killed:   check: absence is not shown on a part
+killed:   check: an address is named in the text a reader sees
+killed:   check: an address is not the start of a longer hash
+killed:   check: an exact string is exact
+killed:   check: at least that many words
+killed:   check: at most that many bytes
+killed:   check: circled letters do not hide a word
+killed:   check: fullwidth letters do not hide a word
+killed:   check: letterlike symbols are read as their letters
+killed:   check: lookalike letters do not hide a word
+killed:   check: mathematical letters do not hide a word
+killed:   check: the subject can be what a document names
+killed:   compare: a round that decides nothing is agreed by its reason
+killed:   compare: the reason a round decides nothing
+killed:   compare: what it leads to
+killed:   compare: what was read
+killed:   contest: a contest unanswered at the last round stays open
+killed:   contest: a retry answers the contest that is open
+killed:   contest: a retry of the issuer's contest that reads nothing is the submitter's
+killed:   contest: a round that decides nothing spends nothing
+killed:   contest: a silent chain leaves no contest open
+killed:   contest: an unfetched contest stays open
+killed:   contest: attempts are capped
+killed:   contest: one read contest each
+killed:   contest: only a party
+killed:   contest: only inside its window
+killed:   contest: the issuer is not charged for a round it did not ask
+killed:   contest: the issuer may retry at all
+killed:   contest: the issuer retries only its own open contest
+killed:   contest: the issuer retries only when the submitter cannot
+killed:   contest: the issuer's own dark retry is counted
+killed:   contest: the issuer's own retry that decides nothing is counted
+killed:   contest: the rounds counted are the sender's
+killed:   contest: the submitter's retries of an open contest are capped
+killed:   contest: the submitter's unfetched contest is charged
+killed:   contest: while one is open the retries are the submitter's
+killed:   count: Tibetan punctuation separates
+killed:   count: a Han or kana character is a word
+killed:   count: a comma or letter leads into no thousands number
+killed:   count: a point stays inside a number
+killed:   count: a sign written on a letter stays in its word
+killed:   count: a thousands comma stays inside a number
+killed:   count: an apostrophe stays inside a word
+killed:   count: any other comma separates two values
+killed:   count: one apostrophe to a word
+killed:   derive: a silent chain or unreadable evidence decides nothing
+killed:   derive: an unusable answer decides nothing
+killed:   final: a final submission frees the subject
+killed:   final: a lifetime runs from the reading
+killed:   final: a submission nobody read replaces no standing
+killed:   final: a verdict that rests on no round points at none
+killed:   final: an unread submission replaces an unread standing
+killed:   final: only a submission a round read is listed
+killed:   final: the latest reading is the standing
+killed:   final: with no standing at all an unread one stands
+killed:   finalize: a favourable verdict does not survive going dark under contest
+killed:   finalize: going dark never improves a verdict
+killed:   finalize: only after the contest window
+killed:   gate: MET carries a quote
+killed:   gate: a check is recomputed
+killed:   gate: a lookup result from the list
+killed:   gate: a quote is one grounded passage
+killed:   gate: a round that decides nothing reports no findings
+killed:   gate: a stored quote is clean
+killed:   gate: an unfetched source carries nothing
+killed:   gate: markers are strings before they are sorted
+killed:   gate: no reading where code decided
+killed:   gate: one lookup for every one needed
+killed:   gate: only MET carries quotes
+killed:   gate: the address that answered is one of the document's
+killed:   gate: the leader's payload is parsed
+killed:   lapse: a silent chain is named
+killed:   lapse: a submission given up says so
+killed:   lapse: nobody asking is named
+killed:   lapse: nothing is given up before a round
+killed:   lapse: only after the assessment window
+killed:   lapse: only the submitter gives up early
+killed:   lapse: the submitter may give up once a round decided nothing
+killed:   lapse: unreadable evidence is named
+killed:   list: a COMPLIANT entry does not make way
+killed:   list: a full listing makes way for a reading
+killed:   list: an expired entry makes way first
+killed:   list: one entry per submitter
+killed:   list: the listing is capped
+killed:   panel: MET shows its passage
+killed:   panel: a quote is clean before it is kept
+killed:   panel: a skipped clause is no answer
+killed:   panel: a state nobody defined is no answer
+killed:   panel: only so many cuts are tried
+killed:   panel: only so many quotes are tried
+killed:   panel: the subject and the claims are not shown
+killed:   read: every address is tried
+killed:   read: one unfetched document makes the round unreadable
+killed:   read: only the pinned bytes are the evidence
+killed:   read: text addressed to the adjudicator earns no reading
+killed:   read: the budget not needed by a short file goes to a long one
+killed:   read: the panel is told when it sees a part
+killed:   read: the panel reads its share and no more
+killed:   round: a reading has its time
+killed:   round: a round that decides nothing is not applied
+killed:   round: a round that decides nothing records only what was agreed
+killed:   spec: CODE_AT names a listed chain
+killed:   spec: CODE_AT reads an address field
+killed:   spec: a JSON object is at least two bytes
+killed:   spec: a JSON shape from the list
+killed:   spec: a certificate's lifetime is bounded
+killed:   spec: a check names a listed field
+killed:   spec: a check type from the list
+killed:   spec: a clause level from the list
+killed:   spec: a document check reads a document field
+killed:   spec: a field type from the list
+killed:   spec: a file is one shape of JSON
+killed:   spec: a judged clause needs a required document
+killed:   spec: a lifetime is longer than the contest window
+killed:   spec: a passage read by its words has two letters
+killed:   spec: a required passage that contains a forbidden one
+killed:   spec: a required string that contains a forbidden one
+killed:   spec: a reserved id is not a field or clause id
+killed:   spec: a size is bounded
+killed:   spec: a submitter has an hour to get its evidence read
+killed:   spec: a version is retired once
+killed:   spec: a word count is bounded by what is read
+killed:   spec: an endpoint carries no query string
+killed:   spec: an unchanged revision is no version
+killed:   spec: at least one mandatory clause
+killed:   spec: chains are capped
+killed:   spec: contradictory checks are refused
+killed:   spec: documents are capped
+killed:   spec: exact keys
+killed:   spec: n words are at least 2n - 1 bytes
+killed:   spec: nothing a reader cannot see
+killed:   spec: one check cannot require more than another allows
+killed:   spec: only the issuer retires
+killed:   spec: only the issuer revises
+killed:   spec: required is a boolean
+killed:   spec: the contest window is bounded
+killed:   spec: the same check twice
+killed:   spec: the shortest window is one a party can act in
+killed:   spec: the zero address is nobody's
+killed:   spec: versions are capped
+killed:   standing: a submitter's own
+killed:   submit: a name a document must name is one it could name
+killed:   submit: a subject carries no accent typed as a mark
+killed:   submit: an address has the form of one
+killed:   submit: an address is used once
+killed:   submit: an attempt number is never reused
+killed:   submit: an empty file is not a document
+killed:   submit: an issuer does not certify under its own specification
+killed:   submit: an optional clause refuses no submission
+killed:   submit: every document is pinned
+killed:   submit: every required field is there
+killed:   submit: exact keys
+killed:   submit: hosts the specification names
+killed:   submit: lookalike names are one subject
+killed:   submit: not to a retired version
+killed:   submit: one open submission of a subject at a time
+killed:   submit: only fields the specification lists
+killed:   submit: open submissions are capped
+killed:   submit: the commitment names the version
+killed:   submit: three per subject
+killed:   submit: two fields are two documents
+killed:   text: JSON escapes only in a document that is JSON
+killed:   text: a Han or kana character is a word of a passage
+killed:   text: a block tag separates
+killed:   text: a control character is nothing
+killed:   text: a custom element is not a block
+killed:   text: a dropped box leaves a gap
+killed:   text: a dropped script leaves nothing
+killed:   text: a letter that renders as a gap is the gap
+killed:   text: an escaped backslash begins no escape
+killed:   text: an inline tag does not split a word
+killed:   text: characters that take no space are removed
+killed:   text: control and line-separator characters
+killed:   text: more characters that take no space
+killed:   text: no party text addresses the adjudicator
+killed:   text: the published markers are matched
+killed:   verdict: a MET that shows nothing is not met
+killed:   verdict: every mandatory clause met is compliant
+killed:   verdict: no mandatory clause met is non-compliant
+killed:   verdict: optional clauses never change it
+killed:   view: the one boolean says when a standing is not yet valid
+killed:   withdraw: a withdrawn submission does not count against the three
+killed:   withdraw: a withdrawn submission frees the subject
+killed:   withdraw: a withdrawn submission is not counted under its version
+killed:   withdraw: only before any round
+killed:   withdraw: only inside the window
+killed:   withdraw: only the submitter
+killed:   contest: the submitter's retry of the issuer's contest is not the issuer's to pay
+killed:   contest: a submission's rounds are capped
+killed:   final: a final submission frees an open slot
+killed:   final: a verdict that rests on no reading has no reading time
+killed:   gate: a title that cannot be encoded is refused
+killed:   round: no marker is stored from a round that decides nothing
+killed:   chain: a null error is no error
+killed:   gate: a lookup is the one the clause calls for
+
+mutations: 242 killed, 0 survived, 0 anchor missing

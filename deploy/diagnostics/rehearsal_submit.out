@@ -1,0 +1,42 @@
+21:50:57 contract 0xf5a38f83b6579DB83C81b41828f56C24Cf78Be32 phase submit
+21:50:57 phase submit
+21:50:57   submit:SC01: submit as s01
+21:51:36     FINALIZED/SUCCESS votes idle,agree,agree,agree,idle
+21:51:44     submit:SC01 HELD {"subject": "Lumen Kites (test only)"}
+21:51:44   submit:SC02: submit as s02
+21:52:27     FINALIZED/SUCCESS votes idle,agree,agree,agree,idle
+21:52:36     submit:SC02 HELD {"subject": "Lumen Kites Second Series (test only)"}
+21:52:36   submit:SC03: submit as s03
+21:53:19     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+21:53:26     submit:SC03 HELD {"subject": "Vague Kites (test only)"}
+21:53:26   submit:SC04: submit as s04
+21:54:05     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+21:54:12     submit:SC04 HELD {"subject": "Placeholder Kites (test only)"}
+21:54:12   submit:SC05: submit as s05
+21:54:52     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+21:54:59     submit:SC05 HELD {"subject": "Planted Kites (test only)"}
+21:55:00   submit:SC06: submit as s06
+21:55:44     FINALIZED/SUCCESS votes idle,idle,agree,agree,agree
+21:55:51     submit:SC06 HELD {"subject": "Unpinned Kites (test only)"}
+21:55:51   submit:SC07: submit as s07
+21:56:31     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+21:56:37     submit:SC07 HELD {"subject": "Restored Kites (test only)"}
+21:56:37   submit:SC08: submit as s08
+21:57:16     FINALIZED/SUCCESS votes agree,agree,idle,agree,agree
+21:57:23     submit:SC08 HELD {"subject": "Mirrored Kites (test only)"}
+21:57:23   submit:SC09: submit as s09
+21:58:03     FINALIZED/SUCCESS votes agree,agree,agree,idle,idle
+21:58:10     submit:SC09 HELD {"subject": "Borrowed Kites (test only)"}
+21:58:10   submit:SC10: submit as s10
+21:58:56     FINALIZED/SUCCESS votes agree,idle,agree,idle,agree
+21:59:04     submit:SC10 HELD {"subject": "Undeployed Kites (test only)"}
+21:59:04   submit:SC11: submit as s11
+21:59:43     FINALIZED/SUCCESS votes agree,agree,idle,idle,agree
+21:59:50     submit:SC11 HELD {"subject": "Withdrawn Kites (test only)"}
+21:59:50   submit:SC12: submit as s12
+22:00:29     FINALIZED/SUCCESS votes agree,agree,agree,agree,agree
+22:00:36     submit:SC12 HELD {"subject": "Pictured Kites (test only)"}
+22:00:36   submit:SC13: submit as s13
+22:01:15     FINALIZED/SUCCESS votes agree,agree,idle,agree,idle
+22:01:22     submit:SC13 HELD {"subject": "Abandoned Kites (test only)"}
+22:01:22 summary {"steps": 14, "transactions": 14, "outcomes_checked": 14, "outcomes_held": 14, "missed": [], "refusals": 0, "refusals_held": 0}

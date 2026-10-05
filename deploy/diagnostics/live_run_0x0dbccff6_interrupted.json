@@ -1,0 +1,1118 @@
+{
+ "address": "0x0DBCcff629Ad8AaABC3D63F9BA766072C872949c",
+ "finished_at": "2026-10-04T21:44:44Z",
+ "order": [
+  "publish_spec",
+  "submit:SC01",
+  "submit:SC02",
+  "submit:SC03",
+  "submit:SC04",
+  "submit:SC05",
+  "submit:SC06",
+  "submit:SC07",
+  "submit:SC08",
+  "submit:SC09",
+  "submit:SC10",
+  "submit:SC11",
+  "submit:SC12",
+  "submit:SC13",
+  "assess:SC01",
+  "assess:SC02",
+  "contest:SC02",
+  "assess:SC03",
+  "assess:SC04",
+  "assess:SC05",
+  "assess:SC06",
+  "assess-unread:SC07",
+  "add_mirror:SC07:docs",
+  "add_mirror:SC07:metadata",
+  "assess:SC07",
+  "assess:SC08",
+  "assess:SC09",
+  "assess:SC10"
+ ],
+ "raw_base": "https://raw.githubusercontent.com/Olawalter/Specification-Compliance-Court-/3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/",
+ "started_at": "2026-10-04T21:20:21Z",
+ "steps": {
+  "add_mirror:SC07:docs": {
+   "args": [
+    "SUB-000007",
+    "docs",
+    "https://raw.githubusercontent.com/Olawalter/Specification-Compliance-Court-/3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-standard.html"
+   ],
+   "at": "2026-10-04T21:40:31Z",
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "add_mirror",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"2\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "add_mirror:SC07:docs",
+   "tx": "0x3798755806731d33311a9a9f01defe0f3eaacec3ba8aa6483b96b19532a4fddf",
+   "votes": [
+    "agree",
+    "idle",
+    "idle",
+    "agree",
+    "agree"
+   ],
+   "wallet": "s07"
+  },
+  "add_mirror:SC07:metadata": {
+   "args": [
+    "SUB-000007",
+    "metadata",
+    "https://raw.githubusercontent.com/Olawalter/Specification-Compliance-Court-/3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "at": "2026-10-04T21:41:10Z",
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "add_mirror",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"2\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "add_mirror:SC07:metadata",
+   "tx": "0x20befb5b3115f1358bc2f26637d0d98e0315289e2925ffd69f603dacbc54c196",
+   "votes": [
+    "idle",
+    "agree",
+    "agree",
+    "agree",
+    "idle"
+   ],
+   "wallet": "s07"
+  },
+  "assess-unread:SC07": {
+   "applied": false,
+   "args": [
+    "SUB-000007"
+   ],
+   "at": "2026-10-04T21:39:46Z",
+   "expected": "recorded, not applied, the submission stays open",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "NOT_ASKED"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "submitted at addresses that serve nothing: a round decides nothing, the submitter adds addresses for the same pinned bytes, and the next round reads them",
+   "observed_outcome": "EVIDENCE_UNAVAILABLE",
+   "observed_reason": "EVIDENCE_UNREADABLE",
+   "observed_states": {},
+   "open_round": "EVIDENCE_UNREADABLE",
+   "panel_state": "SKIPPED",
+   "resolution_id": "RD-000008",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000008\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "",
+    ""
+   ],
+   "status": "FINALIZED",
+   "status_after": "SUBMITTED",
+   "step": "assess-unread:SC07",
+   "tx": "0xd983f1e8ffb8e349c0f1d3ee4c0467116cff77f6d33a77c99201a4c7cde7d44c",
+   "votes": [
+    "agree",
+    "idle",
+    "idle",
+    "agree",
+    "agree"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC01": {
+   "applied": true,
+   "args": [
+    "SUB-000001"
+   ],
+   "at": "2026-10-04T21:33:03Z",
+   "expected_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "MET"
+   },
+   "expected_verdict": "COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "every clause met, the optional one too",
+   "observed_outcome": "COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000001",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000001\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-complete.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC01",
+   "tx": "0x0341f1be9a544ff3c473730844482b3973d8eccf06427decf931ee1c3e95a7fe",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC02": {
+   "applied": true,
+   "args": [
+    "SUB-000002"
+   ],
+   "at": "2026-10-04T21:34:14Z",
+   "expected_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "every mandatory clause met and the optional one not: compliant all the same, and the issuer's contest upholds it",
+   "observed_outcome": "COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000002",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000002\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-standard.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC02",
+   "tx": "0x264aefb8654f93a07ab8d0eee8c35436eb693363409124acd2a2fab0306aac8a",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "agree",
+    "idle"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC03": {
+   "applied": true,
+   "args": [
+    "SUB-000003"
+   ],
+   "at": "2026-10-04T21:36:18Z",
+   "expected_states": {
+    "k1": "NOT_MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "PARTIALLY_COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "royalties are mentioned and never stated: no rate, nobody named",
+   "observed_outcome": "PARTIALLY_COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "NOT_MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000004",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000004\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-vague.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC03",
+   "tx": "0xf44b555843c87ddae1a6daa7fd6933e9bd5ccd19955835efd1a3ed2c149592c8",
+   "votes": [
+    "agree",
+    "idle",
+    "idle",
+    "agree",
+    "agree"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC04": {
+   "applied": true,
+   "args": [
+    "SUB-000004"
+   ],
+   "at": "2026-10-04T21:37:24Z",
+   "expected_states": {
+    "k1": "NOT_MET",
+    "k2": "NOT_MET",
+    "k3": "NOT_MET",
+    "k4": "NOT_MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "NON_COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0x000000000000000000000000000000000000dead",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "EMPTY"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "a placeholder page, broken metadata and an address with no contract: no mandatory clause is met",
+   "observed_outcome": "NON_COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "NOT_MET",
+    "k2": "NOT_MET",
+    "k3": "NOT_MET",
+    "k4": "NOT_MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000005",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000005\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-placeholder.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata-broken.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC04",
+   "tx": "0x2e4775a2e96ad447799dfc905e0ae48d657fec1992c08d19323b6298a9b61382",
+   "votes": [
+    "agree",
+    "agree",
+    "idle",
+    "agree",
+    "idle"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC05": {
+   "applied": true,
+   "args": [
+    "SUB-000005"
+   ],
+   "at": "2026-10-04T21:38:12Z",
+   "expected_states": {
+    "k1": "NOT_MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "PARTIALLY_COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [
+    "docs:BODY"
+   ],
+   "method": "assess",
+   "note": "the documentation addresses the adjudicator: the judged clauses are not met without the panel, and the checks are still decided in code",
+   "observed_outcome": "PARTIALLY_COMPLIANT",
+   "observed_reason": "SOURCE_ADDRESSES_ADJUDICATOR",
+   "observed_states": {
+    "k1": "NOT_MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "SKIPPED",
+   "resolution_id": "RD-000006",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000006\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-planted.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC05",
+   "tx": "0xbac61886628bf81fefce07a8c554048b3627a0468b17b6a973d054c66a227428",
+   "votes": [
+    "idle",
+    "agree",
+    "idle",
+    "agree",
+    "agree"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC06": {
+   "applied": false,
+   "args": [
+    "SUB-000006"
+   ],
+   "at": "2026-10-04T21:39:02Z",
+   "expected": "recorded, not applied, the submission stays open",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "NOT_ASKED"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "the pinned digest is not the served document's: the round decides nothing, and when the assessment window passes the submission is unverifiable",
+   "observed_outcome": "EVIDENCE_UNAVAILABLE",
+   "observed_reason": "EVIDENCE_UNREADABLE",
+   "observed_states": {},
+   "open_round": "EVIDENCE_UNREADABLE",
+   "panel_state": "SKIPPED",
+   "resolution_id": "RD-000007",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000007\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "",
+    ""
+   ],
+   "status": "FINALIZED",
+   "status_after": "SUBMITTED",
+   "step": "assess:SC06",
+   "tx": "0x840a102c3528dfba8e1f09d93c0bdbdd96a0facae9038e969c366385dedf6d8a",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC07": {
+   "applied": true,
+   "args": [
+    "SUB-000007"
+   ],
+   "at": "2026-10-04T21:42:04Z",
+   "expected_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "submitted at addresses that serve nothing: a round decides nothing, the submitter adds addresses for the same pinned bytes, and the next round reads them",
+   "observed_outcome": "COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000009",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000009\\\"\"}}",
+   "round": 2,
+   "served_by": [
+    "https://raw.githubusercontent.com/Olawalter/Specification-Compliance-Court-/3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-standard.html",
+    "https://raw.githubusercontent.com/Olawalter/Specification-Compliance-Court-/3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC07",
+   "tx": "0xeb044d88cf1692e9c8352de3e2e9ecc85077fc0430b4dad52e50c6c1168b98f2",
+   "votes": [
+    "idle",
+    "agree",
+    "agree",
+    "agree",
+    "idle"
+   ],
+   "wallet": "s07"
+  },
+  "assess:SC08": {
+   "applied": true,
+   "args": [
+    "SUB-000008"
+   ],
+   "at": "2026-10-04T21:42:58Z",
+   "expected_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "the first address of each document serves nothing and the second serves the pinned bytes: the evidence is read from the mirror",
+   "observed_outcome": "COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000010",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000010\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://raw.githubusercontent.com/Olawalter/Specification-Compliance-Court-/3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-standard.html",
+    "https://raw.githubusercontent.com/Olawalter/Specification-Compliance-Court-/3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC08",
+   "tx": "0x7f16c6ef8906859c5c3ac0c10e73d9234ee9d19fea79ffb1af7a5b2b4d2f267b",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "agree",
+    "idle"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC09": {
+   "applied": true,
+   "args": [
+    "SUB-000009"
+   ],
+   "at": "2026-10-04T21:43:50Z",
+   "expected_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "NOT_MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "PARTIALLY_COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "good documentation - of another contract: the clause that binds the evidence to the submitted address is checked in code and is not met",
+   "observed_outcome": "PARTIALLY_COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "NOT_MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000011",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000011\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-standard.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC09",
+   "tx": "0xe0bf887a6c3179b4a15efaf201c8e14077d7a2067bf911d37abc1ccc017fd3d0",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "keeper"
+  },
+  "assess:SC10": {
+   "applied": true,
+   "args": [
+    "SUB-000010"
+   ],
+   "at": "2026-10-04T21:44:44Z",
+   "expected_states": {
+    "k1": "MET",
+    "k2": "NOT_MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "PARTIALLY_COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0x000000000000000000000000000000000000dead",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "EMPTY"
+    }
+   ],
+   "markers": [],
+   "method": "assess",
+   "note": "good documentation of a contract that was never deployed: the chain says there is no code at the address",
+   "observed_outcome": "PARTIALLY_COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "MET",
+    "k2": "NOT_MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000012",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000012\\\"\"}}",
+   "round": 1,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-undeployed.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "assess:SC10",
+   "tx": "0x719e32cb9e0cbe4b210fa7cf411498f14984c24cc7bc7f630abb1adc3f109d03",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "agree",
+    "idle"
+   ],
+   "wallet": "keeper"
+  },
+  "contest:SC02": {
+   "applied": true,
+   "args": [
+    "SUB-000002"
+   ],
+   "at": "2026-10-04T21:35:19Z",
+   "expected_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "expected_verdict": "COMPLIANT",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "lookups": [
+    {
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+     "chain": "ethereum",
+     "clause": "k2",
+     "result": "CODE"
+    }
+   ],
+   "markers": [],
+   "method": "contest",
+   "note": "every mandatory clause met and the optional one not: compliant all the same, and the issuer's contest upholds it",
+   "observed_outcome": "COMPLIANT",
+   "observed_reason": "ASSESSED",
+   "observed_states": {
+    "k1": "MET",
+    "k2": "MET",
+    "k3": "MET",
+    "k4": "MET",
+    "k5": "NOT_MET"
+   },
+   "panel_state": "ASSESSED",
+   "resolution_id": "RD-000003",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"RD-000003\\\"\"}}",
+   "round": 2,
+   "served_by": [
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/docs-standard.html",
+    "https://cdn.jsdelivr.net/gh/Olawalter/Specification-Compliance-Court-@3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7/fixtures/evidence/metadata.json"
+   ],
+   "status": "FINALIZED",
+   "step": "contest:SC02",
+   "tx": "0x415b55872ff183a436b80525eb1486c78c6a211507a87b2ef0fe0d6acf8f9dff",
+   "votes": [
+    "agree",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "issuer"
+  },
+  "publish_spec": {
+   "args": [
+    "{\"assess_window\": 3600, \"certificate_ttl\": 0, \"chains\": [{\"id\": \"ethereum\", \"rpc_url\": \"https://ethereum-rpc.publicnode.com/\"}], \"clauses\": [{\"id\": \"k1\", \"kind\": \"JUDGED\", \"level\": \"MANDATORY\", \"text\"... (1643 characters)"
+   ],
+   "at": "2026-10-04T21:21:22Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "publish_spec",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SPEC-000001\\\"\"}}",
+   "spec_hash": "5d3a475b8cb7ecefa502cbc8684ff65f5ef8c634449bb1b86e1bf1374c60368b",
+   "spec_id": "SPEC-000001",
+   "status": "FINALIZED",
+   "step": "publish_spec",
+   "tx": "0xb8af8f69e5782f7a6ff6f98b9fedc30bcded981dca24a2d53246faa29c276fd5",
+   "votes": [
+    "idle",
+    "agree",
+    "agree",
+    "agree",
+    "idle"
+   ],
+   "wallet": "issuer"
+  },
+  "submit:SC01": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"332bd3432eec8a6d89e8ab32e35a8907dc67b35de081ccb614ff8b1d420f53d3\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (940 characters)"
+   ],
+   "at": "2026-10-04T21:22:07Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000001\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC01",
+   "subject": "Lumen Kites (test only)",
+   "submission_id": "SUB-000001",
+   "tx": "0x14a8b031edb654b21e634d10788d371455e476439c8e1ecc42b9a85561335334",
+   "votes": [
+    "agree",
+    "agree",
+    "agree",
+    "idle",
+    "idle"
+   ],
+   "wallet": "s01"
+  },
+  "submit:SC02": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (968 characters)"
+   ],
+   "at": "2026-10-04T21:22:59Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000002\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC02",
+   "subject": "Lumen Kites Second Series (test only)",
+   "submission_id": "SUB-000002",
+   "tx": "0xcef13079fdd57d25481b5aaf089295fa2e5476a488c15e00dca6e9c107ab3d2a",
+   "votes": [
+    "idle",
+    "agree",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "s02"
+  },
+  "submit:SC03": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"1787e251b12e813961a8e16e4de19170b694a8fe1de3c9246ef3e6804f6a971c\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (934 characters)"
+   ],
+   "at": "2026-10-04T21:23:48Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000003\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC03",
+   "subject": "Vague Kites (test only)",
+   "submission_id": "SUB-000003",
+   "tx": "0x0a0ca31c97e06d4144330289795b10c2cbdd777e8d9a74a4f28d4b80bd159589",
+   "votes": [
+    "agree",
+    "agree",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "s03"
+  },
+  "submit:SC04": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0x000000000000000000000000000000000000dead\", \"docs\": {\"sha256\": \"b75e534ab21dd26c1112261ac316268905d1ee761d7ed31b86df6168051a7ed6\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (972 characters)"
+   ],
+   "at": "2026-10-04T21:24:33Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000004\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC04",
+   "subject": "Placeholder Kites (test only)",
+   "submission_id": "SUB-000004",
+   "tx": "0xe050aedeab93e4444143db192e78ebdc035febd463866071acc2a585a0d99ab6",
+   "votes": [
+    "idle",
+    "idle",
+    "agree",
+    "agree",
+    "agree"
+   ],
+   "wallet": "s04"
+  },
+  "submit:SC05": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"60d64a255141072d154e76b56d9dc3a2e02bb8ef8187f742b8ea8481950173bb\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (942 characters)"
+   ],
+   "at": "2026-10-04T21:25:34Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000005\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC05",
+   "subject": "Planted Kites (test only)",
+   "submission_id": "SUB-000005",
+   "tx": "0x8c60ea5aec162774d143e9dd24baaae887a171ff2bb7b6309cdced26fc29d11d",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "agree",
+    "idle"
+   ],
+   "wallet": "s05"
+  },
+  "submit:SC06": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (946 characters)"
+   ],
+   "at": "2026-10-04T21:26:25Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000006\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC06",
+   "subject": "Unpinned Kites (test only)",
+   "submission_id": "SUB-000006",
+   "tx": "0x85ecb82ea72eb4e9b8372015f7f3389a678896e71524d29e354e12718f63cd90",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "s06"
+  },
+  "submit:SC07": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (687 characters)"
+   ],
+   "at": "2026-10-04T21:27:11Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000007\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC07",
+   "subject": "Restored Kites (test only)",
+   "submission_id": "SUB-000007",
+   "tx": "0xdf20765c8e79f22bafa90444addb80ba2b02718cef7d348c344d76287ff56143",
+   "votes": [
+    "agree",
+    "agree",
+    "agree",
+    "agree",
+    "agree"
+   ],
+   "wallet": "s07"
+  },
+  "submit:SC08": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (996 characters)"
+   ],
+   "at": "2026-10-04T21:27:56Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000008\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC08",
+   "subject": "Mirrored Kites (test only)",
+   "submission_id": "SUB-000008",
+   "tx": "0xd39ff6a23057bbdc22e49325799f475e49de2b60f961bede4afec499c19d8e69",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "s08"
+  },
+  "submit:SC09": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xdac17f958d2ee523a2206206994597c13d831ec7\", \"docs\": {\"sha256\": \"df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (946 characters)"
+   ],
+   "at": "2026-10-04T21:28:42Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000009\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC09",
+   "subject": "Borrowed Kites (test only)",
+   "submission_id": "SUB-000009",
+   "tx": "0x7e4962743618ce1bd04500cfb7f8743f17beebbefe8289c0d95b51343a6f5053",
+   "votes": [
+    "agree",
+    "idle",
+    "agree",
+    "idle",
+    "agree"
+   ],
+   "wallet": "s09"
+  },
+  "submit:SC10": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0x000000000000000000000000000000000000dead\", \"docs\": {\"sha256\": \"45aa607e0aa9b91814e2e5563b405ca5aa7e4e0aaf018d3e907b3ae784169cc6\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (954 characters)"
+   ],
+   "at": "2026-10-04T21:29:28Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000010\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC10",
+   "subject": "Undeployed Kites (test only)",
+   "submission_id": "SUB-000010",
+   "tx": "0xc035be35c60bfa2cad39ef996d41fca6eaab25c931e4f7d6fdf041b130972e93",
+   "votes": [
+    "agree",
+    "agree",
+    "agree",
+    "agree",
+    "agree"
+   ],
+   "wallet": "s10"
+  },
+  "submit:SC11": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (948 characters)"
+   ],
+   "at": "2026-10-04T21:30:20Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000011\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC11",
+   "subject": "Withdrawn Kites (test only)",
+   "submission_id": "SUB-000011",
+   "tx": "0x449040928385bd79ede16bc7a0ae31d45ba0e6daa6a54af51a4d4598a4740876",
+   "votes": [
+    "agree",
+    "agree",
+    "idle",
+    "agree",
+    "idle"
+   ],
+   "wallet": "s11"
+  },
+  "submit:SC12": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"1d90d5af13edbda2de0d2014dc33d75512275b3c88d1268f1620f5d7437b3bd5\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (948 characters)"
+   ],
+   "at": "2026-10-04T21:31:12Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000012\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC12",
+   "subject": "Pictured Kites (test only)",
+   "submission_id": "SUB-000012",
+   "tx": "0x04c324fad16a39f77faa3d1bcb3eaafb22a5f48b2354dd2046c012c92e089cc7",
+   "votes": [
+    "idle",
+    "idle",
+    "agree",
+    "agree",
+    "agree"
+   ],
+   "wallet": "s12"
+  },
+  "submit:SC13": {
+   "args": [
+    "SPEC-000001",
+    1,
+    "{\"fields\": {\"contract\": \"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48\", \"docs\": {\"sha256\": \"df1764fc5dcba1f92678ea02aca2cad8cb1f9108aee959f2363e98d57ef43a4d\", \"urls\": [\"https://cdn.jsdelivr.net/gh/Olawa... (689 characters)"
+   ],
+   "at": "2026-10-04T21:31:57Z",
+   "held": true,
+   "kind": "write",
+   "leader_execution": "SUCCESS",
+   "method": "submit",
+   "result": "{\"status\": \"return\", \"payload\": {\"readable\": \"\\\"SUB-000013\\\"\"}}",
+   "status": "FINALIZED",
+   "step": "submit:SC13",
+   "subject": "Abandoned Kites (test only)",
+   "submission_id": "SUB-000013",
+   "tx": "0xf2600939e0f292acb15391bbd9c685dfe2290ac349cc581a080d22e96249e239",
+   "votes": [
+    "idle",
+    "idle",
+    "agree",
+    "agree",
+    "agree"
+   ],
+   "wallet": "s13"
+  }
+ },
+ "summary": {
+  "missed": [],
+  "outcomes_checked": 26,
+  "outcomes_held": 26,
+  "refusals": 0,
+  "refusals_held": 0,
+  "steps": 28,
+  "transactions": 28
+ }
+}

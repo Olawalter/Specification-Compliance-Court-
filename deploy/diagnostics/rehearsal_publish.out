@@ -1,0 +1,6 @@
+21:49:26 contract 0xf5a38f83b6579DB83C81b41828f56C24Cf78Be32 phase publish
+21:49:26 phase publish
+21:49:26   publish_spec: publish_spec as issuer
+21:50:06     FINALIZED/SUCCESS votes idle,idle,agree,agree,agree
+21:50:12     publish_spec HELD {"spec_id": "SPEC-000001", "spec_hash": "5d3a475b8cb7ecefa502cbc8684ff65f5ef8c634449bb1b86e1bf1374c60368b"}
+21:50:12 summary {"steps": 1, "transactions": 1, "outcomes_checked": 1, "outcomes_held": 1, "missed": [], "refusals": 0, "refusals_held": 0}

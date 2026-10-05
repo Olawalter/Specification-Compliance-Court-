@@ -1,0 +1,27 @@
+{
+  "byte_identical": true,
+  "chain_id": 61999,
+  "contract_address": "0xaFCed3F4bcbC85791cd0a0890bfbFa6Fd419f622",
+  "deploy_tx": "0x5b506b956b08f37cef803bf8e7b82034ef519ddde7849e164341232507121d13",
+  "deployed_at": "2026-10-05T03:01:32Z",
+  "deployed_sha256": "9f80658222c138e429be091fbfde90c0c68e4fea4ded0bcac07dbb557eeaeaee",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "explorer_contract": "https://explorer-studio.genlayer.com/address/0xaFCed3F4bcbC85791cd0a0890bfbFa6Fd419f622",
+  "explorer_tx": "https://explorer-studio.genlayer.com/tx/0x5b506b956b08f37cef803bf8e7b82034ef519ddde7849e164341232507121d13",
+  "head_at_deploy": "3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7",
+  "leader_execution": "SUCCESS",
+  "network": "studionet",
+  "rpc": "https://studio.genlayer.com/api",
+  "signer": "0x463F680BFf09E744AD1541CF63289A1bDB1863bb",
+  "source_blob": "36c034c4fa0d1e76fa148cfd906040bb484e32cd",
+  "source_commit": "3f0ffc8d9c18c63d357aabcda2ce7b8c2b6b4cd7",
+  "source_sha256": "9f80658222c138e429be091fbfde90c0c68e4fea4ded0bcac07dbb557eeaeaee",
+  "status": "FINALIZED",
+  "votes": [
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE",
+    "AGREE"
+  ]
+}
